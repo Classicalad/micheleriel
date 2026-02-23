@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Michele Riel Psychotherapy</title>
+  <link rel="stylesheet" href="replica.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<nav class="main-nav nav-transparent" id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="images/profile.jpg" alt="Michele Riel" class="nav-brand-img">
+      <div><div class="nav-brand-text">Michele Riel</div><div class="nav-brand-sub">Registered Psychotherapist</div></div>
+    </a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-dropdown">
+        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-dropdown-menu">
+          <a href="services/how-will-therapy-help.html">How will Therapy help?</a>
+          <a href="services/individual-therapy.html">Individual Therapy</a>
+          <a href="services/couples-therapy.html">Couples Therapy</a>
+          <a href="services/family-therapy.html">Family Therapy</a>
+          <a href="services/indigenous-peoples-therapy.html">Indigenous Peoples Therapy</a>
+        </div>
+      </li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="https://micheleriel.janeapp.com/" class="nav-link nav-cta" target="_blank">Book Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero hero-inner" style="background-image:url('images/counseling6-hero.jpg');">
+  <div class="page-hero-overlay" style="opacity:0.35;"></div>
+  <div class="page-hero-content">
+    <h1 class="hero-h1">Contact</h1>
+    <h2 class="hero-h2">Get in Touch</h2>
+  </div>
+</section>
+
+<!-- CONTACT CONTENT -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: Info -->
+      <div class="contact-info-block">
+        <h3>I'd Love to Hear From You</h3>
+        <p class="body-text" style="margin-bottom:28px;">Whether you have questions about my services, want to learn more about the therapy process, or are ready to book your first session — please don't hesitate to reach out. I aim to respond within 1–2 business days.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contact-detail-text">
+            <p>Phone</p>
+            <a href="tel:+12893027391">(289) 302-7391</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-detail-text">
+            <p>Email</p>
+            <a href="mailto:info@michele-riel.ca">info@michele-riel.ca</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-video"></i></div>
+          <div class="contact-detail-text">
+            <p>Sessions</p>
+            <span>Online via Secure Video (Jane App)</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="contact-detail-text">
+            <p>Location</p>
+            <span>Greater Toronto Area, Ontario</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-map"></i></div>
+          <div class="contact-detail-text">
+            <p>Provinces Served</p>
+            <span>Ontario · Alberta · Saskatchewan · Manitoba · Newfoundland</span>
+          </div>
+        </div>
+
+        <div class="fees-box" style="margin-top:32px;">
+          <h4>Session Fees</h4>
+          <div class="fee-item"><span>Individual Session (50 min)</span><strong>$175</strong></div>
+          <div class="fee-item"><span>Couples / Family Session (80 min)</span><strong>$235</strong></div>
+          <div class="fee-item"><span>NIHB</span><strong>Accepted</strong></div>
+          <p style="font-size:0.8rem;color:#999;margin-top:10px;">Receipts provided for extended health benefits. Sliding scale available — please inquire.</p>
+        </div>
+
+        <div style="margin-top:24px;">
+          <a href="https://micheleriel.janeapp.com/" class="btn btn-primary" target="_blank">Book Online via Jane App</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div>
+        <div class="contact-form-block">
+          <h3>Send a Message</h3>
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+              <div class="form-group">
+                <label>First Name *</label>
+                <input type="text" name="firstName" placeholder="First name" required>
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="Last name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" name="phone" placeholder="(Optional)">
+            </div>
+            <div class="form-group">
+              <label>Service of Interest</label>
+              <select name="service">
+                <option value="">Please select...</option>
+                <option>Individual Therapy</option>
+                <option>Couples Therapy</option>
+                <option>Family Therapy</option>
+                <option>Indigenous Peoples Therapy</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" rows="5" placeholder="Tell me a little about what brings you here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+            <p style="font-size:0.78rem;color:#999;text-align:center;margin-top:12px;"><i class="fa-solid fa-lock" style="font-size:0.7rem;"></i> Your information is kept strictly confidential.</p>
+          </form>
+          <div id="formSuccess" style="display:none;background:#e8f7f7;border:1px solid #01a5ad;padding:32px;text-align:center;border-radius:2px;">
+            <i class="fa-solid fa-circle-check" style="font-size:2.5rem;color:#01a5ad;display:block;margin-bottom:12px;"></i>
+            <h4 style="font-family:'Josefin Sans',Arial,sans-serif;font-size:1.3rem;margin-bottom:8px;">Thank you for reaching out!</h4>
+            <p style="font-size:0.9rem;color:#555;">I'll be in touch within 1–2 business days. For urgent matters, please call <a href="tel:+12893027391" style="color:#01a5ad;">(289) 302-7391</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-text">
+      <p>Proudly providing online therapy for individuals, couples, and families across Ontario.</p>
+      <p>While based in the Greater Toronto Area, I am also licensed to work with clients in Alberta, Saskatchewan, Manitoba, and Newfoundland.</p>
+      <p><a href="tel:+12893027391" style="color:#01a5ad;">(289) 302-7391</a> &nbsp;|&nbsp; <a href="mailto:info@michele-riel.ca" style="color:#01a5ad;">info@michele-riel.ca</a></p>
+      <div class="footer-links">
+        <a href="services/couples-therapy.html">Couples Therapy</a>
+        <a href="services/individual-therapy.html">Individual Therapy</a>
+        <a href="services/family-therapy.html">Family Therapy</a>
+        <a href="services/indigenous-peoples-therapy.html">Indigenous Peoples Therapy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-logos">
+      <img src="images/jane-websites.png" alt="Jane Websites">
+      <img src="images/crpo.webp" alt="CRPO">
+      <img src="images/ccpa.jpg" alt="CCPA">
+      <img src="images/psychology-today.png" alt="Psychology Today">
+      <img src="images/nihb.png" alt="NIHB">
+      <img src="images/pride.jpg" alt="Pride">
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Michele Riel, Registered Psychotherapist. All Rights Reserved.</p>
+      <div style="display:flex;gap:16px;"><a href="#">Login</a><span style="color:rgba(255,255,255,0.3)">|</span><a href="https://jane.app" target="_blank">Powered by Jane Websites</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav=document.getElementById('mainNav');
+  window.addEventListener('scroll',()=>{if(window.scrollY>60){nav.classList.add('nav-solid');nav.classList.remove('nav-transparent');}else{nav.classList.remove('nav-solid');nav.classList.add('nav-transparent');}});
+  const burger=document.getElementById('navHamburger'),links=document.getElementById('navLinks');
+  burger.addEventListener('click',()=>{burger.classList.toggle('open');links.classList.toggle('open');document.body.style.overflow=links.classList.contains('open')?'hidden':'';});
+  document.querySelectorAll('.nav-links a').forEach(l=>l.addEventListener('click',()=>{links.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';}));
+  function handleSubmit(e){
+    e.preventDefault();
+    const btn=e.target.querySelector('button');
+    btn.disabled=true; btn.textContent='Sending…';
+    setTimeout(()=>{
+      document.getElementById('contactForm').style.display='none';
+      document.getElementById('formSuccess').style.display='block';
+    },1000);
+  }
+</script>
+</body>
+</html>
